@@ -25,7 +25,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.all?{|space| space != " "}
+  !board.any?{|space| space != " "}
 end
 
 def draw?(board)
